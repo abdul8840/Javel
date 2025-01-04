@@ -1,11 +1,16 @@
 import React from 'react'
 import './App.css';
+import Header from './components/Header/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className='text-4xl font-bold text-slate-500'>
-      Hellow world
-    </div>
+    <>
+    <Router>
+      <Header />
+    </Router>
+      
+    </>
   )
 }
 
